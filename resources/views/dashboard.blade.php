@@ -132,17 +132,20 @@
                         <th width="20%">Rank</th>
                         <th width="70%">Player</th>
                     </tr>
-                    <tr>
-                        <td class="avatar">
-                            <img src="{{ url('images/unknown-player.png') }}" />
-                        </td>
-                        <td>
-                            <a href="#">Super Admin</a>
-                        </td>
-                        <td>
-                            <a href="#">John Doe</a>
-                        </td>
-                    </tr>
+                    
+                    @foreach(range(1, 7) as $player)
+                        <tr>
+                            <td class="avatar">
+                                <img src="{{ url('images/unknown-player.png') }}" />
+                            </td>
+                            <td>
+                                <a href="#">Super Admin</a>
+                            </td>
+                            <td>
+                                <a href="#">John Doe</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </table>
             </div>
             
