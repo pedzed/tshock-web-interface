@@ -1,9 +1,45 @@
 @import "_settings";
 @import "_functions";
 
+@import "components/_topbar";
+@import "components/_sidebar";
+
+html {
+    height: auto;
+}
+
 body {
-    background: #eee;
+    background: #edf2f6;
     overflow-y: scroll;
+}
+
+.row {
+    margin: 0;
+}
+
+#main-container {
+    position: relative;
+    left: $sidebar-width;
+    @include calc('width', '100% - #{$sidebar-width}');
+}
+
+header.main {
+    background: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #dedede;
+    
+    h1 {
+        font-size: rem-calc(28);
+        color: #4f5054;
+        margin: 0;
+    }
+}
+
+main {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 @media #{$small-up} {}

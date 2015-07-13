@@ -1,4 +1,4 @@
-$topbar-height: 80px;
+$topbar-height: 72px;
 $sidebar-width: 200px;
 
 // Foundation by ZURB
@@ -85,6 +85,7 @@ $include-html-global-classes: $include-html-classes;
 // $row-width: rem-calc(1000);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
+$row-width: rem-calc(1200);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1140,7 +1141,6 @@ $button-med: rem-calc(14);
 // $reveal-max-width: $row-width;
 // $reveal-modal-padding: rem-calc(20);
 // $reveal-box-shadow: 0 0 10px rgba($black,.4);
-$reveal-default-width: 55%;
 
 // We use these to style the reveal close button
 // $reveal-close-font-size: rem-calc(40);

@@ -1,13 +1,28 @@
 var app = new function() {
-    var test = function() {
-        console.log("Initialized app.");
+    var initFoundation = function() {
+        $(document).foundation();
+    }
+    
+    var enhanceDesign = function() {
+        var stretchSidebarHeight = function() {
+            var sidebar = $('#sidebar');
+            $(sidebar).height($(document).height());
+        }
+        
+        var __construct = function() {
+            // stretchSidebarHeight();
+        }()
     }
     
     return {
         init: function() {
-            this.test();
+            initFoundation();
+        },
+        enhanceDesign: function() {
+            enhanceDesign();
         }
     }
 }
 
 app.init();
+app.enhanceDesign();
