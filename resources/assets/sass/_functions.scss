@@ -1,0 +1,54 @@
+@mixin transition($property: all, $speed: .1s, $ease: ease-out) {
+    -webkit-transition: $property $speed $ease;
+    transition: $property $speed $ease;
+}
+
+@mixin calc($prop, $val) {
+    #{$prop}: -webkit-calc(#{$val});
+    #{$prop}: -moz-calc(#{$val});
+    #{$prop}: calc(#{$val});
+}
+
+@mixin darken-on-hover($alpha: .05) {
+    & {
+        position: relative;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, $alpha);
+        opacity: 0;
+    }
+    
+    &:hover:after {
+        opacity: 1;
+    }
+}
+
+@mixin lighten-on-hover($alpha: .05) {
+    & {
+        position: relative;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, $alpha);
+        opacity: 0;
+    }
+    
+    &:hover:after {
+        opacity: 1;
+    }
+}

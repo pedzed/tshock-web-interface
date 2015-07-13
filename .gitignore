@@ -1,0 +1,13 @@
+public/css/*
+!public/css/.gitkeep
+
+public/js/*
+!public/js/.gitkeep
+
+public/vendor/*
+!public/vendor/.gitkeep
+
+/vendor
+/node_modules
+Homestead.yaml
+.env
