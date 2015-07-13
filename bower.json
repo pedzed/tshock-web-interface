@@ -1,0 +1,15 @@
+{
+    "name": "TShock Web Interface",
+    "dependencies": {
+        "foundation": "~5.5.1",
+        "jquery": "~2.1.0",
+        "font-awesome": "~4.3.0"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
