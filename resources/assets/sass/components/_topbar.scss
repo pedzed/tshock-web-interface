@@ -7,12 +7,17 @@
         display: block;
         color: #808080;
         height: 100%;
-        padding: 18px 32px;
+        padding: 23px 32px;
         border-right: 2px solid #efefef;
         @include darken-on-hover(.02);
         
         &#sidebar-toggle {
             font-size: 1.4rem;
+            padding: 18px 32px;
+        }
+        
+        .icon {
+            margin-right: 8px;
         }
     }
     

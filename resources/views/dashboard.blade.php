@@ -112,7 +112,7 @@
                 <div class="panel radius blue">
                     <h3>Server Information</h3>
                     <dl>
-                        <dt>IP Address</dt>
+                        <dt>Host</dt>
                         <dd>127.0.0.1</dd>
                         
                         <dt>Port</dt>
@@ -150,11 +150,8 @@
                 <div class="panel radius purple">
                     <h3>REST Information</h3>
                     <dl>
-                        <dt>IP Address</dt>
-                        <dd>{{ config('tshock.rest.ip') }}</dd>
-                        
-                        <dt>Port</dt>
-                        <dd>{{ config('tshock.rest.port') }}</dd>
+                        <dt>Host/port</dt>
+                        <dd>{{ config('tshock.rest.host') }}:{{ config('tshock.rest.port') }}</dd>
                         
                         <dt>User</dt>
                         <dd>{{ config('tshock.rest.username') }}</dd>
