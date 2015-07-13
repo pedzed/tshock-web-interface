@@ -17,6 +17,60 @@ body {
     margin: 0;
 }
 
+.panel {
+    color: #eee;
+    border: none;
+    
+    &.green {
+        background: #00b17d;
+    }
+    
+    &.red {
+        background: #d64d54;
+    }
+    
+    &.blue {
+        background: #47a4e9;
+    }
+    
+    &.purple {
+        background: #a279c5;
+    }
+    
+    .progress {
+        background: rgba(0, 0, 0, .1);
+        height: 5px;
+        margin-bottom: 12px;
+        
+        .meter {
+            background: #eee;
+            height: inherit;
+        }
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: rem-calc(20);
+        color: #eee;
+        padding-bottom: rem-calc(12);
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+    }
+    
+    dl {
+        color: #eee;
+    }
+}
+
+dl {
+    dt {
+        margin-bottom: 0;
+    }
+    
+    dd {
+        margin-bottom: rem-calc(6);
+    }
+}
+
 #main-container {
     position: relative;
     left: $sidebar-width;
