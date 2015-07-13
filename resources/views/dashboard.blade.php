@@ -3,8 +3,19 @@
 @section('content')
     <header class="main">
         <div class="row">
-            <div class="columns">
+            <div class="medium-8 columns">
                 <h1>Dashboard</h1>
+            </div>
+            
+            <div class="medium-4 columns">
+                <!-- <div class="online-status right">
+                    <i class="fa fa-circle status-icon status-online"></i>
+                    Server Online
+                </div> -->
+                <div class="online-status right">
+                    <i class="fa fa-circle status-icon status-offline"></i>
+                    Server Offline
+                </div>
             </div>
         </div>
     </header>

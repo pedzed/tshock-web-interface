@@ -88,6 +88,30 @@ header.main {
         color: #4f5054;
         margin: 0;
     }
+    
+    .online-status {
+        display: inline-block;
+        font-size: rem-calc(15);
+        font-weight: bold;
+        color: #9aa0ac;
+        padding: 6px 24px;
+        border: 2px solid #ccc;
+        border-radius: 9999px;
+        
+        .status-icon {
+            font-size: rem-calc(12);
+            vertical-align: 1px;
+            margin-right: 4px;
+            
+            &.status-online {
+                color: #88d050;
+            }
+            
+            &.status-offline {
+                color: #ee1860;
+            }
+        }
+    }
 }
 
 main {
