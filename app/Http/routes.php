@@ -1,9 +1,6 @@
 <?php
 
 Route::get('/', [
+    'uses' => 'DashboardController@index',
     'as' => 'dashboard',
-    function()
-    {
-        return view('dashboard');
-    }
 ]);
