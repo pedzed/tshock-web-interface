@@ -13,28 +13,38 @@ body {
     overflow-y: scroll;
 }
 
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
 .row {
     margin: 0;
 }
 
 .panel {
-    color: #eee;
+    background: #fff;
+    color: #6f7e95;
     border: none;
     
     &.green {
         background: #00b17d;
+        color: #eee;
     }
     
     &.red {
         background: #d64d54;
+        color: #eee;
     }
     
     &.blue {
         background: #47a4e9;
+        color: #eee;
     }
     
     &.purple {
         background: #a279c5;
+        color: #eee;
     }
     
     .progress {
@@ -68,6 +78,12 @@ dl {
     
     dd {
         margin-bottom: rem-calc(6);
+    }
+}
+
+table.user-list {
+    .avatar {
+        text-align: center;
     }
 }
 
